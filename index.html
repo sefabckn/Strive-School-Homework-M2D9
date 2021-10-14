@@ -23,14 +23,7 @@ Make sure you check the documentation before creting anything custom.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <source src="app.js" type="text/js">
-
-
-    <style>
-        .container-fluid {
-            color: white;
-            padding-top: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
 
 </head>
 
@@ -40,6 +33,8 @@ Make sure you check the documentation before creting anything custom.
         Create a Jumbotron section with a quick explanation / image of the website.
         Make it appear with a fade-in animation effect when the page loads.
     -->
+
+    <!-- SOLUTION : line 140-->
 
     <!-- EXERCISE 2
         Use a Bootstrap Card to contain every album in the favorite list you previously created.
@@ -143,8 +138,20 @@ Make sure you check the documentation before creting anything custom.
             </ul>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="fade-in-text">
+                <div class="container ">
+                    <h1 class="display-4">Fade In Jumbotron</h1>
+                    <p class="lead">Content Should be appeared in 3 seconds.</p>
+                </div>
+            </div>
 
-    <div class="row mb-5 bg-dark">
+        </div>
+    </div>
+
+
+    <div class="row mb-5 bg-dark mt-5">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card shadow border-0 bg-dark">
                 <div class="card text-center" style="width: 18rem;">
